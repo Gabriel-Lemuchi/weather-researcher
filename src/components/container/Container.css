@@ -84,3 +84,56 @@ button {
 .neutral #container {
   background-color: rgba(145, 86, 141, 0.707);
 }
+
+@media (max-width: 768px) {
+  #container {
+    width: 80vw;
+    height: auto;
+    padding: 3vh;
+    margin-top: 5vh;
+  }
+
+  input {
+    width: 100%;
+    height: 6vh;
+    font-size: 1rem;
+  }
+
+  button {
+    margin-top: 1vh;
+    margin-left: 0;
+    margin-bottom: 3vh;
+  }
+
+  #weather_section h1 {
+    font-size: 1.8rem;
+  }
+
+  #weather_section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #container {
+    width: 90vw;
+    padding: 2vh;
+    border-radius: 3vh;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button{
+    margin-bottom: 3vh;
+  }
+
+  #weather_section h1 {
+    font-size: 1.5rem;
+  }
+}
