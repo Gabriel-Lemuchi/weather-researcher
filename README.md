@@ -1,0 +1,1 @@
+Uma aplicação react que consome uma API da OpenWeather. O usuário busca a sua cidade, e a aplicação devolve as informações do clima da cidade pesquisada, e dependendo da temperatura da cidade, a cor de fundo se adequa.

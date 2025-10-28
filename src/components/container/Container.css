@@ -1,0 +1,86 @@
+/*Container principal da página*/
+#container {
+  padding: 4vh;
+  width: 45vh;
+  height: 65vh;
+  margin: 0 auto;
+  background-color: rgba(145, 86, 141, 0.707);
+  color: white;
+  border-radius: 5%;
+  margin-top: 10vh;
+  box-shadow: 1px 1px 2px 2px rgb(83, 83, 83);
+  transition: background-color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+/*Parte de busca do container*/
+#search_section {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Barra de pesquisa*/
+input {
+  background-color: rgba(195, 173, 194, 0.506);
+  color: white;
+  font-family: "Saira", sans-serif;
+  width: 75%;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  height: 5vh;
+  border-radius: 5vh;
+  text-align: center;
+}
+
+/*Botão de busca*/
+button {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  margin-top: -3vh;
+  margin-left: 1vh;
+}
+
+/*Linha para separar a parte de busca com o local das informações do container*/
+#line {
+  width: 100%;
+  border: solid 2px white;
+  margin-bottom: 1vh;
+}
+
+/*Seção com as informações do clima da cidade buscada:*/
+#weather_section {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#weather_section > h1 {
+  margin-top: 1vh;
+}
+
+/*Se a temperatura da cidade buscada estiver alta:*/
+.hot #container {
+  background-color: rgba(255, 120, 50, 0.7);
+}
+
+/*Se a temperatura da cidade buscada estiver baixa:*/
+.cold #container {
+  background-color: rgba(100, 180, 255, 0.6);
+}
+
+/*Se o clima da cidade buscada estiver chuvoso:*/
+.rainy #container {
+  background-color: rgba(150, 150, 150, 0.5);
+}
+
+/*Se a temperatura da cidade buscada estiver tranquilo:*/
+.mild #container {
+  background-color: rgba(113, 136, 145, 0.6);
+}
+
+/*Estado original:*/
+.neutral #container {
+  background-color: rgba(145, 86, 141, 0.707);
+}
